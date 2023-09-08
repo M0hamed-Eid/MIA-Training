@@ -1,2 +1,1426 @@
 This my first use of nano in linux!
 
+
+iamme@iamme-ubuntu:~$ pwd
+/home/iamme
+iamme@iamme-ubuntu:~$ htop
+
+Command 'htop' not found, but can be installed with:
+
+sudo snap install htop  # version 3.2.1, or
+sudo apt  install htop  # version 2.2.0-2build1
+
+See 'snap info htop' for additional versions.
+
+iamme@iamme-ubuntu:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.5 LTS
+Release:	20.04
+Codename:	focal
+iamme@iamme-ubuntu:~$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="20.04.5 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.5 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+iamme@iamme-ubuntu:~$ ls /etc/apt/sources.list.d/
+appimagelauncher-team-ubuntu-stable-focal.list
+appimagelauncher-team-ubuntu-stable-focal.list.save
+danielrichter2007-ubuntu-grub-customizer-focal.list
+danielrichter2007-ubuntu-grub-customizer-focal.list.save
+google-chrome.list
+google-chrome.list.save
+ros-latest.list
+ros-latest.list.save
+vscode.list
+vscode.list.save
+iamme@iamme-ubuntu:~$ cat /etc/lsb-release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.5 LTS"
+iamme@iamme-ubuntu:~$ ifconfig
+
+Command 'ifconfig' not found, but can be installed with:
+
+sudo apt install net-tools
+
+iamme@iamme-ubuntu:~$ sudo apt install net-tools
+[sudo] password for iamme: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libnvidia-compute-515 linux-headers-5.15.0-52-generic
+  linux-hwe-5.15-headers-5.15.0-52 linux-image-5.15.0-52-generic
+  linux-modules-5.15.0-52-generic linux-modules-extra-5.15.0-52-generic
+  linux-objects-nvidia-515-5.15.0-52-generic
+  linux-signatures-nvidia-5.15.0-52-generic
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 466 not upgraded.
+Need to get 196 kB of archives.
+After this operation, 864 kB of additional disk space will be used.
+Get:1 http://eg.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Fetched 196 kB in 1s (151 kB/s)   
+Selecting previously unselected package net-tools.
+(Reading database ... 356041 files and directories currently installed.)
+Preparing to unpack .../net-tools_1.60+git20180626.aebd88e-1ubuntu1_amd64.deb .
+..
+Unpacking net-tools (1.60+git20180626.aebd88e-1ubuntu1) ...
+Setting up net-tools (1.60+git20180626.aebd88e-1ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+iamme@iamme-ubuntu:~$ ifconfig
+enp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 98:e7:43:43:52:27  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 10900  bytes 847908 (847.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10900  bytes 847908 (847.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.5  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fdb4:f58e:713b:7400:740a:4ce0:3179:7e11  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::4860:6111:e2e7:f324  prefixlen 64  scopeid 0x20<link>
+        inet6 fdb4:f58e:713b:7400:7903:fd8b:7fb4:184b  prefixlen 64  scopeid 0x0<global>
+        ether e8:6f:38:cd:47:37  txqueuelen 1000  (Ethernet)
+        RX packets 1118606  bytes 1534282713 (1.5 GB)
+        RX errors 0  dropped 6782  overruns 0  frame 0
+        TX packets 276056  bytes 34909856 (34.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+iamme@iamme-ubuntu:~$ htop
+
+Command 'htop' not found, but can be installed with:
+
+sudo snap install htop  # version 3.2.1, or
+sudo apt  install htop  # version 2.2.0-2build1
+
+See 'snap info htop' for additional versions.
+
+iamme@iamme-ubuntu:~$ sudo snap install htop 
+htop 3.2.2 from Maximiliano Bertacchini (maxiberta) installed
+iamme@iamme-ubuntu:~$ htop
+locales-launch: Data of en_US locale not found, generating, please wait...
+iamme@iamme-ubuntu:~$ sudo snap install git
+error: snap "git" not found
+iamme@iamme-ubuntu:~$ gedit &
+[1] 104717
+iamme@iamme-ubuntu:~$ snap
+The snap command lets you install, configure, refresh and remove snaps.
+Snaps are packages that work across many different Linux distributions,
+enabling secure delivery and operation of the latest apps and utilities.
+
+Usage: snap <command> [<options>...]
+
+Commonly used commands can be classified as follows:
+
+         Basics: find, info, install, remove, list
+        ...more: refresh, revert, switch, disable, enable, create-cohort
+        History: changes, tasks, abort, watch
+        Daemons: services, start, stop, restart, logs
+    Permissions: connections, interface, connect, disconnect
+  Configuration: get, set, unset, wait
+    App Aliases: alias, aliases, unalias, prefer
+        Account: login, logout, whoami
+      Snapshots: saved, save, check-snapshot, restore, forget
+         Device: model, reboot, recovery
+      ... Other: warnings, okay, known, ack, version
+    Development: download, pack, run, try
+
+For more information about a command, run 'snap help <command>'.
+For a short summary of all commands, run 'snap help --all'.
+iamme@iamme-ubuntu:~$ sudo apt update 
+Hit:1 http://ppa.launchpad.net/appimagelauncher-team/stable/ubuntu focal InRelease
+Hit:2 http://ppa.launchpad.net/danielrichter2007/grub-customizer/ubuntu focal InRelease
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease                 
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]     
+Hit:5 http://packages.microsoft.com/repos/code stable InRelease               
+Hit:6 http://eg.archive.ubuntu.com/ubuntu focal InRelease                     
+Get:7 http://eg.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Hit:8 http://packages.ros.org/ros/ubuntu focal InRelease 
+Get:9 http://eg.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Fetched 336 kB in 7s (50.6 kB/s)                                              
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+466 packages can be upgraded. Run 'apt list --upgradable' to see them.
+iamme@iamme-ubuntu:~$ cd bin
+bash: cd: bin: No such file or directory
+iamme@iamme-ubuntu:~$ cd ..
+iamme@iamme-ubuntu:/home$ ls
+iamme
+iamme@iamme-ubuntu:/home$ cd ..
+iamme@iamme-ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+iamme@iamme-ubuntu:/$ cd bin
+iamme@iamme-ubuntu:/bin$ ls
+'['                                   mpicc
+ 2to3-2.7                             mpiCC
+ aa-enabled                           mpicc.openmpi
+ aa-exec                              mpiCC.openmpi
+ aclocal                              mpic++.openmpi
+ aclocal-1.16                         mpicxx
+ aconnect                             mpicxx.openmpi
+ acpi_listen                          mpiexec
+ acyclic                              mpiexec.openmpi
+ add-apt-repository                   mpif77
+ addpart                              mpif77.openmpi
+ addr2line                            mpif90
+ alsabat                              mpif90.openmpi
+ alsaloop                             mpifort
+ alsamixer                            mpifort.openmpi
+ alsatplg                             mpirun
+ alsaucm                              mpirun.openmpi
+ amidi                                mrd
+ amixer                               mren
+ amuFormat.sh                         mscompress
+ apg                                  msexpand
+ apgbfm                               msgattrib
+ aplay                                msgcat
+ aplaymidi                            msgcmp
+ apport-bug                           msgcomm
+ apport-cli                           msgconv
+ apport-collect                       msgen
+ apport-unpack                        msgexec
+ appres                               msgfilter
+ appstreamcli                         msgfmt
+ apr-1-config                         msggrep
+ apr-config                           msginit
+ apropos                              msgmerge
+ apt                                  msgunfmt
+ apt-add-repository                   msguniq
+ apt-cache                            mshortname
+ apt-cdrom                            mshowfat
+ apt-config                           msiexec
+ aptdcon                              msiexec-stable
+ apt-extracttemplates                 mt
+ apt-ftparchive                       mt-gnu
+ apt-get                              mtools
+ apt-key                              mtoolstest
+ apt-mark                             mtr
+ apt-sortpkgs                         mtrace
+ apturl                               mtr-packet
+ apturl-gtk                           mtype
+ apu-1-config                         mutter
+ apu-config                           mv
+ ar                                   mxtar
+ arch                                 mysql_config
+ arecord                              mzip
+ arecordmidi                          namei
+ arm2hpdl                             nano
+ as                                   nautilus
+ aseqdump                             nautilus-autorun-software
+ aseqnet                              nautilus-sendto
+ aspell                               nawk
+ aspell-import                        nc
+ assistant                            ncal
+ atobm                                nc-config
+ autoconf                             nc.openbsd
+ autoheader                           neato
+ autom4te                             neqn
+ automake                             netcat
+ automake-1.16                        netkit-ftp
+ automat-visualize3                   netstat
+ autopoint                            networkctl
+ autoreconf                           networkd-dispatcher
+ autoscan                             newgrp
+ autoupdate                           ngettext
+ avahi-browse                         nice
+ avahi-browse-domains                 niLicense
+ avahi-publish                        ninja
+ avahi-publish-address                niReg
+ avahi-publish-service                nisdomainname
+ avahi-resolve                        NiViewer
+ avahi-resolve-address                nl
+ avahi-resolve-host-name              nm
+ avahi-set-host-name                  nm-applet
+ awk                                  nmcli
+ axfer                                nm-connection-editor
+ b2                                   nm-online
+ b2sum                                nmtui
+ baobab                               nmtui-connect
+ base32                               nmtui-edit
+ base64                               nmtui-hostname
+ basename                             nohup
+ bash                                 nop
+ bashbug                              nosetests3
+ bc                                   notify-send
+ bccmd                                nproc
+ bcomps                               nroff
+ bcp                                  nsenter
+ bdftopcf                             nslookup
+ bdftruncate                          nspr-config
+ bitmap                               nss-config
+ bjam                                 nstat
+ bluemoon                             nsupdate
+ bluetoothctl                         ntfs-3g
+ bluetooth-sendto                     ntfs-3g.probe
+ bmtoa                                ntfscat
+ boltctl                              ntfscluster
+ bootctl                              ntfscmp
+ brltty                               ntfsdecrypt
+ brltty-ctb                           ntfsfallocate
+ brltty-trtxt                         ntfsfix
+ brltty-ttb                           ntfsinfo
+ broadwayd                            ntfsls
+ browse                               ntfsmove
+ brz                                  ntfsrecover
+ bsd-from                             ntfssecaudit
+ bsd-write                            ntfstruncate
+ btattach                             ntfsusermap
+ btmgmt                               ntfswipe
+ btmon                                numfmt
+ bundle2.7                            nvidia-detector
+ bundler2.7                           nvidia-powerd
+ bunzip2                              nvidia-sleep.sh
+ busctl                               nvlc
+ busybox                              oakdecode
+ bwrap                                obexctl
+ bzcat                                objcopy
+ bzcmp                                objdump
+ bzdiff                               oclock
+ bzegrep                              od
+ bzexe                                odbcinst
+ bzfgrep                              ode-config
+ bzgrep                               oem-getlogs
+ bzip2                                ogdi-config
+ bzip2recover                         ompi-clean
+ bzless                               ompi_info
+ bzmore                               ompi-server
+ bzr                                  on_ac_power
+ c++                                  onsgmls
+ c89                                  opalc++
+ c89-gcc                              opalcc
+ c99                                  opal_wrapper
+ c99-gcc                              opencv_annotation
+ cal                                  opencv_interactive-calibration
+ calendar                             opencv_version
+ calibrate_ppa                        opencv_visualisation
+ canberra-gtk-play                    opencv_waldboost_detector
+ cancel                               openssl
+ captoinfo                            openvt
+ cat                                  opldecode
+ catchsegv                            orca
+ catkin                               orca-dm-wrapper
+ catkin_create_pkg                    orte-clean
+ catkin_find_pkg                      orted
+ catkin_generate_changelog            orterun
+ catkin_package_version               orte-server
+ catkin_prepare_release               osage
+ catkin_tag_changelog                 osgmlnorm
+ catkin_test_changelog                ospam
+ catman                               ospcat
+ cautious-launcher                    ospent
+ cc                                   os-prober
+ ccomps                               osx
+ cct                                  p11-kit
+ cd-create-profile                    pacat
+ cd-fix-profile                       pacmd
+ cd-iccdump                           pactl
+ cd-it8                               padsp
+ c++filt                              pager
+ cftp3                                pa-info
+ chacl                                pamon
+ chage                                pango-list
+ chardet3                             pango-view
+ chardetect3                          paperconf
+ chattr                               paplay
+ chcon                                parec
+ check-language-support               parecord
+ cheese                               partx
+ chfn                                 passwd
+ chgrp                                paste
+ chmod                                pasteurize
+ choom                                pasuspender
+ chown                                patch
+ chrome-gnome-shell                   patchwork
+ chrt                                 pathchk
+ chsh                                 pax11publish
+ chvt                                 pcre2-config
+ ciptool                              pcre-config
+ circo                                pdb2
+ ckbcomp                              pdb2.7
+ ckeygen3                             pdb3
+ cksum                                pdb3.8
+ clear                                pdf2dsc
+ clear_console                        pdf2ps
+ cluster                              pdfattach
+ cmake                                pdfdetach
+ cmp                                  pdffonts
+ code                                 pdfimages
+ codepage                             pdfinfo
+ col                                  pdfseparate
+ colcrt                               pdfsig
+ colormgr                             pdftocairo
+ colrm                                pdftohtml
+ column                               pdftoppm
+ comm                                 pdftops
+ compile_et                           pdftotext
+ compose                              pdfunite
+ conch3                               peekfd
+ corelist                             perl
+ cp                                   perl5.30.0
+ cpack                                perl5.30-i386-linux-gnu
+ cpan                                 perl5.30-x86_64-linux-gnu
+ cpan5.30-i386-linux-gnu              perlbug
+ cpan5.30-x86_64-linux-gnu            perldoc
+ cpio                                 perli11ndoc
+ cpio-filter                          perlivp
+ cpp                                  perlthanks
+ cpp-8                                pf2afm
+ cpp-9                                pfbtopfa
+ crc32                                pftp
+ c_rehash                             pg_config
+ crontab                              pgrep
+ cs2cs                                pic
+ csplit                               pico
+ ctest                                piconv
+ ctstat                               pidof
+ cupstestppd                          pinentry
+ curl                                 pinentry-curses
+ curl-config                          pinentry-gnome3
+ cut                                  pinentry-x11
+ cvlc                                 ping
+ cvt                                  ping4
+ cvtsudoers                           ping6
+ cygdb3                               pinky
+ cython3                              pip
+ dap-config                           pip3
+ dash                                 pixeltool
+ date                                 pkaction
+ dbus-binding-tool                    pkcheck
+ dbus-cleanup-sockets                 pkcon
+ dbus-daemon                          pkexec
+ dbus-launch                          pkg-config
+ dbus-monitor                         pkgdata
+ dbus-run-session                     pkill
+ dbus-send                            pkmon
+ dbus-update-activation-environment   pkttyagent
+ dbus-uuidgen                         pl2pm
+ dbxtool                              pldd
+ dc                                   plog
+ dconf                                plymouth
+ dd                                   pmap
+ ddstdecode                           pngfix
+ deallocvt                            png-fix-itxt
+ debconf                              pnm2ppa
+ debconf-apt-progress                 po2debconf
+ debconf-communicate                  pod2html
+ debconf-copydb                       pod2man
+ debconf-escape                       pod2text
+ debconf-gettextize                   pod2usage
+ debconf-set-selections               podchecker
+ debconf-show                         podebconf-display-po
+ debconf-updatepo                     podebconf-report-po
+ debian-distro-info                   podselect
+ deb-systemd-helper                   poff
+ deb-systemd-invoke                   pon
+ deja-dup                             POST
+ delaunay                             ppdc
+ delpart                              ppdhtml
+ delv                                 ppdi
+ derb                                 ppdmerge
+ designer                             ppdpo
+ desktop-file-edit                    pphs
+ desktop-file-install                 pr
+ desktop-file-validate                precat
+ devdump                              preconv
+ df                                   preunzip
+ dfu-tool                             prezip
+ dh                                   prezip-bin
+ dh_auto_build                        prime-select
+ dh_auto_clean                        prime-supported
+ dh_auto_configure                    print
+ dh_auto_install                      printafm
+ dh_autoreconf                        printenv
+ dh_autoreconf_clean                  printerbanner
+ dh_auto_test                         printer-profile
+ dh_autotools-dev_restoreconfig       printf
+ dh_autotools-dev_updateconfig        prlimit
+ dh_bash-completion                   proj
+ dh_bugfiles                          projinfo
+ dh_builddeb                          protoc
+ dh_clean                             prove
+ dh_compress                          proxy
+ dh_dwz                               prtstat
+ dh_fixperms                          prune
+ dh_gconf                             ps
+ dh_gencontrol                        ps2ascii
+ dh_girepository                      ps2epsi
+ dh_icons                             ps2pdf
+ dh_install                           ps2pdf12
+ dh_installcatalogs                   ps2pdf13
+ dh_installchangelogs                 ps2pdf14
+ dh_installcron                       ps2pdfwr
+ dh_installdeb                        ps2ps
+ dh_installdebconf                    ps2ps2
+ dh_installdirs                       ps2txt
+ dh_installdocs                       psfaddtable
+ dh_installemacsen                    psfgettable
+ dh_installexamples                   psfstriptable
+ dh_installgsettings                  psfxtable
+ dh_installifupdown                   psicc
+ dh_installinfo                       pslog
+ dh_installinit                       pstree
+ dh_installinitramfs                  pstree.x11
+ dh_installlogcheck                   ptar
+ dh_installlogrotate                  ptardiff
+ dh_installman                        ptargrep
+ dh_installmanpages                   ptx
+ dh_installmenu                       pulseaudio
+ dh_installmime                       pwd
+ dh_installmodules                    pwdx
+ dh_installpam                        py3clean
+ dh_installppp                        py3compile
+ dh_installsystemd                    py3versions
+ dh_installsystemduser                pyclean
+ dh_installtmpfiles                   pycompile
+ dh_installudev                       pydoc2
+ dh_installwm                         pydoc2.7
+ dh_installxfonts                     pydoc3
+ dh_installxmlcatalogs                pydoc3.8
+ dh_link                              pygettext2
+ dh_lintian                           pygettext2.7
+ dh_listpackages                      pygettext3
+ dh_makeshlibs                        pygettext3.8
+ dh_md5sums                           pygmentize
+ dh_missing                           pyhtmlizer3
+ dh_movefiles                         pyjwt3
+ dh_numpy3                            python
+ dh_perl                              python2
+ dh_perl_openssl                      python2.7
+ dh_prep                              python3
+ dh_python2                           python3.8
+ dh_shlibdeps                         python3.8-config
+ dh_sip3                              python3-config
+ dh_strip                             python3-futurize
+ dh_strip_nondeterminism              python3-pasteurize
+ dh_systemd_enable                    pyversions
+ dh_systemd_start                     qcollectiongenerator
+ dh_testdir                           qdbus
+ dh_testroot                          qdbuscpp2xml
+ dh_ucf                               qdbusviewer
+ dh_update_autotools_config           qdbusxml2cpp
+ dh_usrlocal                          qdoc
+ diff                                 qdoc3
+ diff3                                qgltf
+ diffimg                              qhelpconverter
+ dig                                  qhelpgenerator
+ dijkstra                             qlalr
+ dir                                  qmake
+ dircolors                            qml
+ dirmngr                              qml1plugindump
+ dirmngr-client                       qmlbundle
+ dirname                              qmlcachegen
+ dirsplit                             qmleasing
+ discord                              qmlimportscanner
+ distro-info                          qmljs
+ dmesg                                qmllint
+ dnsdomainname                        qmlmin
+ docbook-to-man                       qmlplugindump
+ domainname                           qmlprofiler
+ do-release-upgrade                   qmlscene
+ dot                                  qmltestrunner
+ dot2gxl                              qmlviewer
+ dot_builtins                         qpdldecode
+ dotty                                qtattributionsscanner
+ dpkg                                 qtchooser
+ dpkg-architecture                    qtconfig
+ dpkg-buildflags                      qtdiag
+ dpkg-buildpackage                    qtpaths
+ dpkg-checkbuilddeps                  qtplugininfo
+ dpkg-deb                             quickbook
+ dpkg-distaddfile                     quirks-handler
+ dpkg-divert                          qvkgen
+ dpkg-genbuildinfo                    qvlc
+ dpkg-genchanges                      racc2.7
+ dpkg-gencontrol                      racc2y2.7
+ dpkg-gensymbols                      rake
+ dpkg-maintscript-helper              ranlib
+ dpkg-mergechangelogs                 rbash
+ dpkg-name                            rcc
+ dpkg-parsechangelog                  rcp
+ dpkg-query                           rctest
+ dpkg-scanpackages                    rdiffdir
+ dpkg-scansources                     rdma
+ dpkg-shlibdeps                       rdoc
+ dpkg-source                          rdoc2.7
+ dpkg-split                           readelf
+ dpkg-statoverride                    readlink
+ dpkg-trigger                         realpath
+ dpkg-vendor                          recode-sr-latin
+ driverless                           red
+ du                                   regedit
+ dumpiso                              regedit-stable
+ dumpkeys                             regsvr32
+ duplicity                            regsvr32-stable
+ dvipdf                               remmina
+ dwp                                  remmina-file-wrapper
+ dwz                                  remmina-gnome
+ echo                                 rename.ul
+ ed                                   rendercheck
+ edgepaint                            renice
+ edit                                 repc
+ editor                               rescan-scsi-bus.sh
+ editres                              reset
+ efibootdump                          resizecons
+ efibootmgr                           resizepart
+ egrep                                resolvectl
+ eject                                rev
+ elfedit                              rfcomm
+ empy3                                rgrep
+ enc2xs                               rhythmbox
+ encguess                             rhythmbox-client
+ enchant-2                            ri
+ enchant-lsmod-2                      ri2.7
+ env                                  rlogin
+ envsubst                             rm
+ eog                                  rmdir
+ eps2eps                              rnano
+ eqn                                  rosco
+ erb                                  rosdep
+ erb2.7                               rosdep-source
+ esc-m                                rosdistro_build_cache
+ eutp                                 rosdistro_freeze_source
+ evince                               rosdistro_migrate_to_rep_141
+ evince-previewer                     rosdistro_migrate_to_rep_143
+ evince-thumbnailer                   rosdistro_reformat
+ ex                                   rosinstall
+ expand                               rosinstall_generator
+ expiry                               roslocate
+ expr                                 rosversion
+ f2py3                                rosws
+ f2py3.8                              routef
+ f77                                  routel
+ f95                                  rpcgen
+ factor                               rrsync
+ faillog                              rsh
+ faked-sysv                           rst2html
+ faked-tcp                            rst2html4
+ fakeroot                             rst2html5
+ fakeroot-sysv                        rst2latex
+ fakeroot-tcp                         rst2man
+ fallocate                            rst2odt
+ false                                rst2odt_prepstyles
+ fc-cache                             rst2pseudoxml
+ fc-cat                               rst2s5
+ fc-conflist                          rst2xetex
+ fc-list                              rst2xml
+ fc-match                             rstart
+ fc-pattern                           rstartd
+ fc-query                             rst-buildhtml
+ fc-scan                              rstpep2html
+ fc-validate                          rsync
+ fdp                                  rtstat
+ fgconsole                            ruby
+ fgrep                                ruby2.7
+ file                                 runcon
+ file2brl                             run-mailcap
+ file-roller                          run-parts
+ fincore                              run-with-aspell
+ find                                 rview
+ findmnt                              rvlc
+ firefox                              rygel
+ flock                                Sample-NiAudioSample
+ fltk-config                          Sample-NiBackRecorder
+ fluid                                Sample-NiConvertXToONI
+ fmt                                  Sample-NiCRead
+ fold                                 Sample-NiHandTracker
+ fonttosfnt                           Sample-NiRecordSynthetic
+ foo2ddst                             Sample-NiSimpleCreate
+ foo2ddst-wrapper                     Sample-NiSimpleRead
+ foo2hbpl2                            Sample-NiSimpleSkeleton
+ foo2hbpl2-wrapper                    Sample-NiSimpleViewer
+ foo2hiperc                           Sample-NiUserSelection
+ foo2hiperc-wrapper                   Sample-NiUserTracker
+ foo2hp                               sane-find-scanner
+ foo2hp2600-wrapper                   savelog
+ foo2lava                             sbattach
+ foo2lava-wrapper                     sbcl
+ foo2oak                              sbkeysync
+ foo2oak-wrapper                      sbsiglist
+ foo2qpdl                             sbsign
+ foo2qpdl-wrapper                     sbvarsign
+ foo2slx                              sbverify
+ foo2slx-wrapper                      scanimage
+ foo2xqx                              sccmap
+ foo2xqx-wrapper                      scp
+ foo2zjs                              scp-dbus-service
+ foo2zjs-icc2ps                       screendump
+ foo2zjs-pstops                       script
+ foo2zjs-wrapper                      scriptreplay
+ foomatic-rip                         scsi_logging_level
+ free                                 scsi_mandat
+ from                                 scsi_readcap
+ ftp                                  scsi_ready
+ funzip                               scsi_satl
+ fuser                                scsi_start
+ fusermount                           scsi_stop
+ futurize                             scsi_temperature
+ fwupdagent                           sdiff
+ fwupdate                             sdptool
+ fwupdmgr                             seahorse
+ fwupdtool                            sed
+ g++                                  see
+ g++-9                                select-default-iwrap
+ gamemoded                            select-editor
+ gamemoderun                          sendiso
+ gamma4scanimage                      sensible-browser
+ gapplication                         sensible-editor
+ gatttool                             sensible-pager
+ gazebo                               sensors
+ gazebo-11.11.0                       sensors-conf-convert
+ gc                                   seq
+ gcalccmd                             session-migration
+ gcc                                  sessreg
+ gcc-8                                setarch
+ gcc-9                                setfacl
+ gcc-ar                               setfont
+ gcc-ar-8                             setkeycodes
+ gcc-ar-9                             setleds
+ gcc-nm                               setlogcons
+ gcc-nm-8                             setmetamode
+ gcc-nm-9                             setpci
+ gcc-ranlib                           setpriv
+ gcc-ranlib-8                         setsid
+ gcc-ranlib-9                         setterm
+ gcore                                setupcon
+ gcov                                 setxkbmap
+ gcov-8                               sfdp
+ gcov-9                               sftp
+ gcov-dump                            sg
+ gcov-dump-8                          sg_bg_ctl
+ gcov-dump-9                          sg_compare_and_write
+ gcov-tool                            sg_copy_results
+ gcov-tool-8                          sg_dd
+ gcov-tool-9                          sg_decode_sense
+ gcr-viewer                           sg_emc_trespass
+ gdal-config                          sg_format
+ gdb                                  sg_get_config
+ gdb-add-index                        sg_get_lba_status
+ gdbserver                            sg_ident
+ gdbtui                               sginfo
+ gdbus                                sg_inq
+ gdbus-codegen                        sg_logs
+ gdialog                              sg_luns
+ gdk-pixbuf-csource                   sg_map
+ gdk-pixbuf-pixdata                   sg_map26
+ gdk-pixbuf-thumbnailer               sgm_dd
+ gdmflexiserver                       sg_modes
+ gdm-screenshot                       sg_opcodes
+ gedit                                sgp_dd
+ gem                                  sg_persist
+ gem2.7                               sg_prevent
+ genbrk                               sg_raw
+ gencat                               sg_rbuf
+ gencfu                               sg_rdac
+ gencnval                             sg_read
+ gendict                              sg_read_attr
+ genisoimage                          sg_read_block_limits
+ genrb                                sg_read_buffer
+ geod                                 sg_readcap
+ geos-config                          sg_read_long
+ geqn                                 sg_reassign
+ GET                                  sg_referrals
+ getconf                              sg_rep_zones
+ geteltorito                          sg_requests
+ getent                               sg_reset
+ getfacl                              sg_reset_wp
+ getkeycodes                          sg_rmsn
+ getopt                               sg_rtpg
+ gettext                              sg_safte
+ gettextize                           sg_sanitize
+ gettext.sh                           sg_sat_identify
+ gfortran                             sg_sat_phy_event
+ gfortran-8                           sg_sat_read_gplog
+ gfortran-9                           sg_sat_set_features
+ ghostscript                          sg_scan
+ gie                                  sg_seek
+ ginstall-info                        sg_senddiag
+ gio                                  sg_ses
+ gio-querymodules                     sg_ses_microcode
+ gipddecode                           sg_start
+ g-ir-annotation-tool                 sg_stpg
+ g-ir-compiler                        sg_stream_ctl
+ g-ir-doc-tool                        sg_sync
+ g-ir-generate                        sg_test_rwbuf
+ g-ir-inspect                         sg_timestamp
+ g-ir-scanner                         sg_turs
+ git                                  sg_unmap
+ git-receive-pack                     sg_verify
+ git-shell                            sg_vpd
+ git-upload-archive                   sg_write_buffer
+ git-upload-pack                      sg_write_long
+ gjs                                  sg_write_same
+ gjs-console                          sg_write_verify
+ gkbd-keyboard-display                sg_write_x
+ glib-compile-resources               sg_wr_mode
+ glib-compile-schemas                 sg_xcopy
+ glib-genmarshal                      sg_zone
+ glib-gettextize                      sh
+ glib-mkenums                         sha1sum
+ gml2gv                               sha224sum
+ gnome-calculator                     sha256sum
+ gnome-calendar                       sha384sum
+ gnome-characters                     sha512sum
+ gnome-clocks                         shasum
+ gnome-control-center                 shiboken2
+ gnome-disk-image-mounter             shotwell
+ gnome-disks                          showconsolefont
+ gnome-extensions                     showkey
+ gnome-extensions-app                 showrgb
+ gnome-font-viewer                    shred
+ gnome-help                           shuf
+ gnome-keyring                        simple-scan
+ gnome-keyring-3                      sip
+ gnome-keyring-daemon                 size
+ gnome-language-selector              skill
+ gnome-logs                           slabtop
+ gnome-power-statistics               sleep
+ gnome-screenshot                     slogin
+ gnome-session                        slxdecode
+ gnome-session-classic                smproxy
+ gnome-session-custom-session         snap
+ gnome-session-inhibit                snapctl
+ gnome-session-properties             snapfuse
+ gnome-session-quit                   snice
+ gnome-session-remmina                soelim
+ gnome-shell                          soffice
+ gnome-shell-extension-prefs          software-properties-gtk
+ gnome-shell-extension-tool           sort
+ gnome-shell-perf-tool                sotruss
+ gnome-system-monitor                 spd-conf
+ gnome-terminal                       spd-say
+ gnome-terminal.real                  speaker-test
+ gnome-terminal.wrapper               speech-dispatcher
+ gnome-text-editor                    spice-vdagent
+ gnome-thumbnail-font                 splain
+ gnome-todo                           split
+ gnome-tweaks                         splitfont
+ gnome-www-browser                    sprof
+ gobject-query                        ss
+ gold                                 ssh
+ google-chrome                        ssh-add
+ google-chrome-stable                 ssh-agent
+ gpasswd                              ssh-argv0
+ gpg                                  ssh-copy-id
+ gpg-agent                            ssh-import-id
+ gpgcompose                           ssh-import-id-gh
+ gpgconf                              ssh-import-id-lp
+ gpg-connect-agent                    ssh-keygen
+ gpg-error-config                     ssh-keyscan
+ gpgme-config                         start-pulseaudio-x11
+ gpgme-tool                           startx
+ gpgparsemail                         stat
+ gpgrt-config                         static-sh
+ gpgsm                                stdbuf
+ gpgsplit                             stl2gts
+ gpgtar                               strace
+ gpgv                                 strace-log-merge
+ gpg-wks-server                       strings
+ gpg-zip                              strip
+ gpic                                 stty
+ gprof                                su
+ gpu-manager                          sudo
+ graphml2gv                           sudoedit
+ grep                                 sudoreplay
+ gresource                            sum
+ groff                                svlc
+ grog                                 svn
+ grops                                svnadmin
+ grotty                               svnauthz
+ groups                               svnauthz-validate
+ grub-customizer                      svnbench
+ grub-editenv                         svndumpfilter
+ grub-file                            svnfsfs
+ grub-fstest                          svnlook
+ grub-glue-efi                        svnmucc
+ grub-kbdcomp                         svnrdump
+ grub-menulst2cfg                     svnserve
+ grub-mkfont                          svnsync
+ grub-mkimage                         svnversion
+ grub-mklayout                        symcryptrun
+ grub-mknetdir                        sync
+ grub-mkpasswd-pbkdf2                 syslinux
+ grub-mkrelpath                       syslinux-legacy
+ grub-mkrescue                        system-config-printer
+ grub-mkstandalone                    system-config-printer-applet
+ grub-mount                           systemctl
+ grub-ntldr-img                       systemd
+ grub-render-label                    systemd-analyze
+ grub-script-check                    systemd-ask-password
+ grub-syslinux2cfg                    systemd-cat
+ gs                                   systemd-cgls
+ gsbj                                 systemd-cgtop
+ gsdj                                 systemd-delta
+ gsdj500                              systemd-detect-virt
+ gsettings                            systemd-escape
+ gslj                                 systemd-hwdb
+ gslp                                 systemd-id128
+ gsnd                                 systemd-inhibit
+ gst-device-monitor-1.0               systemd-machine-id-setup
+ gst-discoverer-1.0                   systemd-mount
+ gst-inspect-1.0                      systemd-notify
+ gst-launch-1.0                       systemd-path
+ gst-play-1.0                         systemd-resolve
+ gstreamer-codec-install              systemd-run
+ gst-typefind-1.0                     systemd-socket-activate
+ gtbl                                 systemd-stdio-bridge
+ gtester                              systemd-sysusers
+ gtester-report                       systemd-tmpfiles
+ gtf                                  systemd-tty-ask-password-agent
+ gtk-builder-convert                  systemd-umount
+ gtk-builder-tool                     tabs
+ gtkdoc-check                         tac
+ gtkdoc-depscan                       tail
+ gtkdoc-fixxref                       tar
+ gtkdocize                            taskset
+ gtkdoc-mkdb                          tbl
+ gtkdoc-mkhtml                        tclsh
+ gtkdoc-mkhtml2                       tclsh8.6
+ gtkdoc-mkman                         tcltk-depends
+ gtkdoc-mkpdf                         tee
+ gtkdoc-rebase                        telegram-desktop
+ gtkdoc-scan                          telnet
+ gtkdoc-scangobj                      telnet.netkit
+ gtk-encode-symbolic-svg              tempfile
+ gtk-launch                           test
+ gtk-query-settings                   testlibraw
+ gtk-update-icon-cache                tgz
+ gts2dxf                              thunderbird
+ gts2oogl                             tic
+ gts2stl                              tificc
+ gts2xyz                              time
+ gtscheck                             timedatectl
+ gtscompare                           timeout
+ gts-config                           tkconch3
+ gtstemplate                          tload
+ gunzip                               toe
+ gusbcmd                              top
+ gv2gml                               totem
+ gv2gxl                               totem-video-thumbnailer
+ gvcolor                              touch
+ gvfs-cat                             tput
+ gvfs-copy                            tr
+ gvfs-info                            tracepath
+ gvfs-less                            traceroute6
+ gvfs-ls                              traceroute6.iputils
+ gvfs-mime                            tracker
+ gvfs-mkdir                           transform
+ gvfs-monitor-dir                     transicc
+ gvfs-monitor-file                    transmission-gtk
+ gvfs-mount                           transset
+ gvfs-move                            tred
+ gvfs-open                            trial3
+ gvfs-rename                          troff
+ gvfs-rm                              true
+ gvfs-save                            truncate
+ gvfs-set-attribute                   trust
+ gvfs-trash                           tset
+ gvfs-tree                            tsort
+ gvgen                                ttfread
+ gvmap                                tty
+ gvmap.sh                             twist3
+ gvpack                               twistd3
+ gvpr                                 twopi
+ gxl2dot                              tzselect
+ gxl2gv                               ua
+ gz                                   ubuntu-advantage
+ gz-11.11.0                           ubuntu-bug
+ gzclient                             ubuntu-core-launcher
+ gzclient-11.11.0                     ubuntu-distro-info
+ gzexe                                ubuntu-drivers
+ gzip                                 ubuntu-report
+ gzprop                               ubuntu-security-status
+ gzserver                             ucf
+ gzserver-11.11.0                     ucfq
+ h2ph                                 ucfr
+ h2xs                                 uconv
+ h5c++                                ucs2any
+ h5cc                                 udevadm
+ h5fc                                 udisksctl
+ h5pcc                                uic
+ h5pcc.openmpi                        uic3
+ h5pfc                                ul
+ h5pfc.openmpi                        ulockmgr_server
+ hbpldecode                           umax_pp
+ hciattach                            umount
+ hciconfig                            uname
+ hcitool                              unattended-upgrade
+ hd                                   unattended-upgrades
+ head                                 uncompress
+ HEAD                                 unexpand
+ helpztags                            unflatten
+ hex2hcd                              unicode_start
+ hexdump                              unicode_stop
+ hg                                   uniq
+ hg-ssh                               unity-scope-loader
+ hipercdecode                         unlink
+ host                                 unlz4
+ hostid                               unlzma
+ hostname                             unmkinitramfs
+ hostnamectl                          unopkg
+ hp-align                             unshare
+ hp-check                             unsquashfs
+ hp-clean                             unxz
+ hp-colorcal                          unzip
+ hp-config_usb_printer                unzipsfx
+ hp-doctor                            update-alternatives
+ hp-firmware                          update-desktop-database
+ hp-info                              update-manager
+ hp-levels                            update-mime-database
+ hp-logcapture                        update-notifier
+ hp-makeuri                           upower
+ hp-pkservice                         uptime
+ hp-plugin                            usb-creator-gtk
+ hp-plugin-ubuntu                     usb-devices
+ hp-probe                             usbhid-dump
+ hp-query                             usb_printerid
+ hp-scan                              usbreset
+ hp-setup                             users
+ hp-testpage                          utmpdump
+ hp-timedate                          uuidgen
+ hwe-support-status                   uuidparse
+ i386                                 uz
+ i686-linux-gnu-pkg-config            vdir
+ ibus                                 vi
+ ibus-daemon                          view
+ ibus-setup                           viewres
+ ibus-table-createdb                  vimdot
+ iceauth                              vim.tiny
+ ico                                  vlc
+ iconv                                vlc-wrapper
+ icuinfo                              vmstat
+ id                                   vmwarectrl
+ iecset                               volname
+ ifnames                              vstp
+ ign                                  vtk7
+ ign_remotery_vis                     vtkEncodeString-7.1
+ ijs_pxljr                            vtkHashSource-7.1
+ im-config                            vtkParseJava-7.1
+ im-launch                            vtkWrapHierarchy-7.1
+ info                                 vtkWrapJava-7.1
+ infobrowser                          vtkWrapPython-7.1
+ infocmp                              vtkWrapPythonInit-7.1
+ infotocap                            vtkWrapTcl-7.1
+ inputattach                          vtkWrapTclInit-7.1
+ inspect                              w
+ install                              wall
+ install-info                         watch
+ install-printerdriver                watchgnupg
+ instant                              wc
+ instmodsh                            wdctl
+ intel-virtual-output                 wget
+ invgeod                              whatis
+ invproj                              whereis
+ ionice                               which
+ ip                                   whiptail
+ ipcmk                                who
+ ipcrm                                whoami
+ ipcs                                 whoopsie
+ ipod-read-sysinfo-extended           whoopsie-preferences
+ ipod-time-sync                       wine
+ ippfind                              wine64
+ ipptool                              wine64-stable
+ iptables-xml                         wineboot
+ irb                                  wineboot-stable
+ irb2.7                               winecfg
+ ischroot                             winecfg-stable
+ isdv4-serial-debugger                wineconsole
+ isdv4-serial-inputattach             wineconsole-stable
+ isodump                              winedbg
+ isoinfo                              winedbg-stable
+ isovfy                               winefile
+ ispell-wrapper                       winefile-stable
+ join                                 winepath
+ journalctl                           winepath-stable
+ jpgicc                               wineserver
+ json_pp                              wineserver-stable
+ kbdinfo                              wine-stable
+ kbd_mode                             wish
+ kbxutil                              wish8.6
+ kernel-install                       word-list-compress
+ kerneloops-submit                    wpa_passphrase
+ keyring                              w.procps
+ kill                                 write
+ killall                              wstool
+ kmod                                 X
+ kmodsign                             X11
+ krb5-config                          x11perf
+ krb5-config.mit                      x11perfcomp
+ l2ping                               x86_64
+ l2test                               x86_64-linux-gnu-addr2line
+ laptop-detect                        x86_64-linux-gnu-ar
+ last                                 x86_64-linux-gnu-as
+ lastb                                x86_64-linux-gnu-c++filt
+ lastlog                              x86_64-linux-gnu-cpp
+ lavadecode                           x86_64-linux-gnu-cpp-8
+ lcf                                  x86_64-linux-gnu-cpp-9
+ lconvert                             x86_64-linux-gnu-dwp
+ ld                                   x86_64-linux-gnu-elfedit
+ ld.bfd                               x86_64-linux-gnu-g++
+ ldd                                  x86_64-linux-gnu-g++-9
+ ld.gold                              x86_64-linux-gnu-gcc
+ lefty                                x86_64-linux-gnu-gcc-8
+ less                                 x86_64-linux-gnu-gcc-9
+ lessecho                             x86_64-linux-gnu-gcc-ar
+ lessfile                             x86_64-linux-gnu-gcc-ar-8
+ lesskey                              x86_64-linux-gnu-gcc-ar-9
+ lesspipe                             x86_64-linux-gnu-gcc-nm
+ lexgrog                              x86_64-linux-gnu-gcc-nm-8
+ libassuan-config                     x86_64-linux-gnu-gcc-nm-9
+ libnetcfg                            x86_64-linux-gnu-gcc-ranlib
+ libpng16-config                      x86_64-linux-gnu-gcc-ranlib-8
+ libpng-config                        x86_64-linux-gnu-gcc-ranlib-9
+ libreoffice                          x86_64-linux-gnu-gcov
+ libtoolize                           x86_64-linux-gnu-gcov-8
+ libwacom-list-local-devices          x86_64-linux-gnu-gcov-9
+ linguist                             x86_64-linux-gnu-gcov-dump
+ link                                 x86_64-linux-gnu-gcov-dump-8
+ linkicc                              x86_64-linux-gnu-gcov-dump-9
+ linux32                              x86_64-linux-gnu-gcov-tool
+ linux64                              x86_64-linux-gnu-gcov-tool-8
+ linux-boot-prober                    x86_64-linux-gnu-gcov-tool-9
+ linux-check-removal                  x86_64-linux-gnu-gfortran
+ linux-update-symlinks                x86_64-linux-gnu-gfortran-8
+ linux-version                        x86_64-linux-gnu-gfortran-9
+ listres                              x86_64-linux-gnu-gold
+ ln                                   x86_64-linux-gnu-gprof
+ lneato                               x86_64-linux-gnu-ld
+ lnstat                               x86_64-linux-gnu-ld.bfd
+ loadkeys                             x86_64-linux-gnu-ld.gold
+ loadunimap                           x86_64-linux-gnu-nm
+ localc                               x86_64-linux-gnu-objcopy
+ locale                               x86_64-linux-gnu-objdump
+ locale-check                         x86_64-linux-gnu-pkg-config
+ localectl                            x86_64-linux-gnu-python3.8-config
+ localedef                            x86_64-linux-gnu-python3-config
+ lodraw                               x86_64-linux-gnu-qmake
+ loffice                              x86_64-linux-gnu-ranlib
+ lofromtemplate                       x86_64-linux-gnu-readelf
+ logger                               x86_64-linux-gnu-size
+ login                                x86_64-linux-gnu-strings
+ loginctl                             x86_64-linux-gnu-strip
+ logname                              x86_64-pc-linux-gnu-pkg-config
+ loimpress                            xargs
+ lomath                               xauth
+ look                                 xbiff
+ lorder                               xbrlapi
+ loweb                                xcalc
+ lowntfs-3g                           xclipboard
+ lowriter                             xclock
+ lp                                   xcmsdb
+ lpoptions                            xconsole
+ lpq                                  xcursorgen
+ lpr                                  xcutsel
+ lprm                                 xdg-dbus-proxy
+ lp_solve                             xdg-desktop-icon
+ lpstat                               xdg-desktop-menu
+ lrelease                             xdg-email
+ ls                                   xdg-icon-resource
+ lsattr                               xdg-mime
+ lsblk                                xdg-open
+ lsb_release                          xdg-screensaver
+ lscpu                                xdg-settings
+ lshw                                 xdg-user-dir
+ lsinitramfs                          xdg-user-dirs-gtk-update
+ lsipc                                xdg-user-dirs-update
+ lslocks                              xditview
+ lslogins                             xdpyinfo
+ lsmem                                xdriinfo
+ lsmod                                xedit
+ lsns                                 Xephyr
+ lsof                                 xev
+ lspci                                xeyes
+ lspgpot                              xfd
+ lsusb                                xfontsel
+ ltrace                               xgamma
+ luit                                 xgc
+ lupdate                              xgettext
+ lwp-download                         xhost
+ lwp-dump                             xinit
+ lwp-mirror                           xinput
+ lwp-request                          xkbbell
+ lz                                   xkbcomp
+ lz4                                  xkbevd
+ lz4c                                 xkbprint
+ lz4cat                               xkbvleds
+ lzcat                                xkbwatch
+ lzcmp                                xkeystone
+ lzdiff                               xkill
+ lzegrep                              xload
+ lzfgrep                              xlogo
+ lzgrep                               xlsatoms
+ lzless                               xlsclients
+ lzma                                 xlsfonts
+ lzmainfo                             xmag
+ lzmore                               xman
+ m2300w                               xmessage
+ m2300w-wrapper                       xml2-config
+ m2400w                               xmlcatalog
+ m4                                   xmllint
+ mailmail3                            xmlpatterns
+ make                                 xmlpatternsvalidator
+ makeconv                             xmodmap
+ make-first-existing-target           xmore
+ mako-render                          Xorg
+ man                                  xprop
+ mandb                                xqxdecode
+ manpath                              xrandr
+ man-recode                           xrdb
+ mapscrn                              xrefresh
+ mattrib                              x-session-manager
+ mawk                                 xset
+ mbadblocks                           xsetmode
+ mcat                                 xsetpointer
+ mcd                                  xsetroot
+ mcheck                               xsetwacom
+ mclasserase                          xsltproc
+ mcomp                                xsm
+ mcookie                              xstdcmap
+ mcopy                                xsubpp
+ md5sum                               x-terminal-emulator
+ md5sum.textutils                     xvidtune
+ mdel                                 xvinfo
+ mdeltree                             Xwayland
+ mdig                                 xwd
+ mdir                                 x-window-manager
+ mdu                                  xwininfo
+ mesa-overlay-control.py              xwud
+ mesg                                 x-www-browser
+ meson                                xxd
+ mformat                              xz
+ migrate-pubring-from-classic-gpg     xzcat
+ mimeopen                             xzcmp
+ mimetype                             xzdiff
+ min12xxw                             xzegrep
+ minfo                                xzfgrep
+ mingle                               xzgrep
+ mkdir                                xzless
+ mkfifo                               xzmore
+ mkfontdir                            y2racc2.7
+ mkfontscale                          yelp
+ mkisofs                              yes
+ mkmanifest                           ypdomainname
+ mk_modmap                            zcat
+ mknod                                zcmp
+ mksquashfs                           zdiff
+ mktemp                               zdump
+ mkzftree                             zegrep
+ mlabel                               zenity
+ mm2gv                                zfgrep
+ mmcli                                zforce
+ mmd                                  zgrep
+ mmount                               zip
+ mmove                                zipcloak
+ moc                                  zipdetails
+ mokutil                              zipgrep
+ monitor-sensor                       zipinfo
+ more                                 zipnote
+ mount                                zipsplit
+ mountpoint                           zjsdecode
+ mousetweaks                          zless
+ mpartition                           zmore
+ mpic++                               znew
+iamme@iamme-ubuntu:/bin$ cd ..
+iamme@iamme-ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+iamme@iamme-ubuntu:/$ cd ..
+iamme@iamme-ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+iamme@iamme-ubuntu:/$ cd media/
+iamme@iamme-ubuntu:/media$ ls
+iamme
+iamme@iamme-ubuntu:/media$ cd iamme/
+iamme@iamme-ubuntu:/media/iamme$ ls
+Storage
+iamme@iamme-ubuntu:/media/iamme$ cd Storage
+iamme@iamme-ubuntu:/media/iamme/Storage$ cd My_GitHub/
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub$ cd ..
+iamme@iamme-ubuntu:/media/iamme/Storage$ cd My_GitHub/MIA-Training/
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ mkdir 5_git_linux
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ touch linux_basics.txt
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ ls
+1_C_programming    3_Embedded_Basics  5_git_linux       README.md
+2_Hardware_Basics  4_AI               linux_basics.txt
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ man mv
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ mv linux_basics.txt 5_git_linux/
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ cd 5_git_linux/
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training/5_git_linux$ nanao linux_basics.txt 
+
+Command 'nanao' not found, did you mean:
+
+  command 'nano' from snap nano (5.7+pkg-4057)
+  command 'nano' from deb nano (4.8-1ubuntu1)
+
+See 'snap info <snapname>' for additional versions.
+
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training/5_git_linux$ nano linux_basics.txt 
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training/5_git_linux$ cd ..
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   1_C_programming/task1_1.c
+	modified:   1_C_programming/task1_2.c
+	modified:   1_C_programming/task1_3.c
+	modified:   1_C_programming/task1_4.c
+	modified:   3_Embedded_Basics/01210649832_task3.1.ino
+	modified:   4_AI/shrink_ray_dataset.csv
+	modified:   4_AI/task4.1.py
+	modified:   4_AI/task4.2.ipynb
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	5_git_linux/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git pull
+Already up to date.
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git add 5_git_linux/
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git commit -m "Task 5"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'iamme@iamme-ubuntu.(none)')
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git config --global user.name "Your Name"
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git config --global user.email "you@example.com"
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git config --global user.name "iamme"
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git config --global user.email "mohammedeidabdelmeguid@gmail.com"
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git commit -m "Task 5"
+[main 03f8c67] Task 5
+ 1 file changed, 2 insertions(+)
+ create mode 100644 5_git_linux/linux_basics.txt
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git pull
+Already up to date.
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git push
+Username for 'https://github.com': M0hamed-Eid
+Password for 'https://M0hamed-Eid@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/M0hamed-Eid/MIA-Training.git/'
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git push
+Username for 'https://github.com': M0hamed-Eid 
+Password for 'https://M0hamed-Eid@github.com': 
+remote: Permission to M0hamed-Eid/MIA-Training.git denied to M0hamed-Eid.
+fatal: unable to access 'https://github.com/M0hamed-Eid/MIA-Training.git/': The requested URL returned error: 403
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ ssh-keygen -t rsa -b 4096 -C "you@example.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/iamme/.ssh/id_rsa):   
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/iamme/.ssh/id_rsa
+Your public key has been saved in /home/iamme/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:eGVhgmsF0ekStoGPhcFLlBOn5OtE0hhEqmbXS+cjPJk you@example.com
+The key's randomart image is:
++---[RSA 4096]----+
+| o+o=*+=..o      |
+| . *Bo* +o .     |
+|. o.=B B  o      |
+|.  o+.*..o       |
+|.o .o+.oS        |
+|o .oo *.         |
+|    .E o         |
+|      o .        |
+|                 |
++----[SHA256]-----+
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ ssh-keygen -t rsa -b 4096 -C "mohammedeidabdelmeguid@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/iamme/.ssh/id_rsa): 
+/home/iamme/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/iamme/.ssh/id_rsa
+Your public key has been saved in /home/iamme/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:KJP1OR7nM8LlN7KEjLP4l33Ahv6v0Gq3cHOOgpiGLgk mohammedeidabdelmeguid@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|                 |
+|      .          |
+|     o o .       |
+|    + . Soo      |
+|E    o =.X+      |
+|.. . oooO+@.+    |
+|o . +..o*Bo@..   |
+| o....oo.+*=o    |
++----[SHA256]-----+
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ ssh-add ~/.ssh/id_rsa
+Identity added: /home/iamme/.ssh/id_rsa (mohammedeidabdelmeguid@gmail.com)
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ 
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git config --global user.name "M0hamed-Eid"
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git config --global user.email "mohammedeidabdelmeguid@gmail.com"
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ 
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   1_C_programming/task1_1.c
+	modified:   1_C_programming/task1_2.c
+	modified:   1_C_programming/task1_3.c
+	modified:   1_C_programming/task1_4.c
+	modified:   3_Embedded_Basics/01210649832_task3.1.ino
+	modified:   4_AI/shrink_ray_dataset.csv
+	modified:   4_AI/task4.1.py
+	modified:   4_AI/task4.2.ipynb
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git pull
+Already up to date.
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git push
+Username for 'https://github.com': M0hamed-Eid
+Password for 'https://M0hamed-Eid@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/M0hamed-Eid/MIA-Training.git/'
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git clone https://github.com/M0hamed-Eid/MIA-Training.git
+Cloning into 'MIA-Training'...
+remote: Enumerating objects: 42, done.
+remote: Counting objects: 100% (42/42), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 42 (delta 7), reused 29 (delta 2), pack-reused 0
+Unpacking objects: 100% (42/42), 4.05 MiB | 1.62 MiB/s, done.
+iamme@iamme-ubuntu:/media/iamme/Storage/My_GitHub/MIA-Training$ git push
+
