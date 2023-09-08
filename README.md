@@ -6,28 +6,26 @@ Welcome to my training portfolio with the MIA Electrical Subteam! This repositor
 
 ### 1. C Code for GRU to the Moon
 
-- Description: This project includes the C code implementation of a Generalized Recurrent Unit (GRU) as part of a mission to the moon.
-- Directory: [Link to Project](./c-code-gru-to-the-moon)
+- Description: This project includes the C code implementation of a mission to the moon.
+- Directory: [Link to Project](https://github.com/M0hamed-Eid/MIA-Training/tree/main/1_C_programming)
 
 ### 2. Hardware Design using Proteus
 
-- Description: Here, you'll find schematics and simulations of electronic circuits created in Proteus.
-- Directory: [Link to Project](./hardware-design-using-proteus)
+- Description: Here, you'll find schematics and simulations of electronic circuits created in Proteus like:
+-   Lightning the Dark
+-   Air Extraction to Fan
+-   Box of Shame
+- Directory: [Link to Project](https://github.com/M0hamed-Eid/MIA-Training/tree/main/2_Hardware_Basics)
 
 ### 3. Arduino Code using Tinkercad
 
 - Description: Explore Arduino programs and simulations developed using Tinkercad.
-- Directory: [Link to Project](./arduino-code-using-tinkercad)
+- Directory: [Link to Project](https://github.com/M0hamed-Eid/MIA-Training/tree/main/3_Embedded_Basics)
 
-### 4. Embedded Basics
-
-- Description: This section covers fundamental concepts and code snippets related to embedded systems.
-- Directory: [Link to Project](./embedded-basics)
-
-### 5. Python Code for Machine Learning
+### 4. AI
 
 - Description: Discover machine learning projects and Python code for various applications.
-- Directory: [Link to Project](./python-code-for-machine-learning)
+- Directory: [Link to Project](https://github.com/M0hamed-Eid/MIA-Training/tree/main/4_AI)
 
 ## Getting Started
 
@@ -37,8 +35,8 @@ Feel free to explore, learn, and provide feedback. Your insights are invaluable 
 
 ## License
 
-This repository is open-source under the [MIT License](./LICENSE). You're welcome to use, modify, and distribute the code following the terms of the license.
+This repository is open-source. You're welcome to use, modify, and distribute the code following the terms of the license.
 
-For any questions or collaboration opportunities, please don't hesitate to [contact me](mailto:your.email@example.com).
+For any questions or collaboration opportunities, please don't hesitate to [contact me](mailto:mohammedeidabdelmeguid.com).
 
 Happy exploring!
