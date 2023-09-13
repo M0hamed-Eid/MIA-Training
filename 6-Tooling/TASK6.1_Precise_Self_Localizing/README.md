@@ -39,6 +39,7 @@ The recommended cutoff frequency depends on your specific application and the no
 
 - **DLPF Setting:** You can set the DLPF using the `DLPF_CFG` register (Register 0x1A) in the MPU6050. The specific register values correspond to different cutoff frequencies as documented in the datasheet.
 
-- **Question**
+## Question
+
 It's important to experiment and choose the cutoff frequency that best suits your application while balancing noise reduction with sensor responsiveness. In noisy environments, The filter should be used in this case is Low Pass Filter and its maximum frequency value is 400kHz and the cutoff frequency is 
 400 / (2 * pi) = 282.8 KHz
