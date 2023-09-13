@@ -11,7 +11,6 @@ This documentation provides an overview of the Arduino code for interfacing with
 - [Code Explanation](#code-explanation)
   - [Interfacing with Rotary Encoder](#interfacing-with-rotary-encoder)
   - [Low-Pass Filter](#low-pass-filter)
-- [License](#license)
 
 ## Introduction
 
